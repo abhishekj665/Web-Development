@@ -27,6 +27,15 @@ body {
   .memory {
     margin: 20px 0;
   }
+@media (max-width: 600px) {
+  .memory img {
+    max-width: 100%;
+  }
+  button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
   
   .memory img {
     max-width: 300px;
