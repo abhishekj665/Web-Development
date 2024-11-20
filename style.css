@@ -1,4 +1,9 @@
-/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -10,7 +15,7 @@ body {
   display: none;
 }
 
-h1, h2, h3 {
+h1, h2 {
   color: #ff4081;
 }
 
@@ -22,53 +27,49 @@ button {
   font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
-  margin: 10px;
 }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.memory {
   margin: 20px 0;
 }
 
-.memory-item img {
-  max-width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.memory-item p {
-  margin-top: 10px;
-  font-size: 1em;
-}
-
-/* Celebration Section */
 #celebration {
-  position: relative;
+  margin-top: 20px;
 }
 
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+#celebration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .big-smiley {
   font-size: 100px;
   color: #ff4081;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
-  .memory-item img {
+  .memory img {
     max-width: 100%;
   }
+
   button {
     font-size: 0.9em;
     padding: 8px 16px;
   }
+
+  #celebration img {
+    max-width: 80%;
+  }
+
+  .big-smiley {
+    font-size: 80px;
+  }
+}
+
+.memory img {
+  max-width: 300px;
+  border-radius: 10px;
 }
