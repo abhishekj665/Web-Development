@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2 {
+  color: #ff4081;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.memory {
+  margin: 20px 0;
+}
+
+#celebration {
+  margin-top: 20px;
+}
+
+#celebration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.big-smiley {
+  font-size: 100px;
+  color: #ff4081;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .memory img {
+    max-width: 100%;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  #celebration img {
+    max-width: 80%;
+  }
+
+  .big-smiley {
+    font-size: 80px;
+  }
+}
+
+.memory img {
+  max-width: 300px;
+  border-radius: 10px;
+}
