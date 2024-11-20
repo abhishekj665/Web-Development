@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2, h3 {
+  color: #ff4081;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.memory-item img {
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.memory-item p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* Celebration Section */
+#celebration {
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.big-smiley {
+  font-size: 100px;
+  color: #ff4081;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .memory-item img {
+    max-width: 100%;
+  }
+  button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}

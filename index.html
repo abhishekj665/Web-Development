@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Question for You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Section -->
+  <div id="welcome">
+    <h1>To Someone Who Inspires Me.</h1>
+    <h3>Hi there! This is a little page I made just to say thank you for being who you are.</h3>
+    <p>Click "Start" to begin!</p>
+    <button onclick="startJourney()">Start</button>
+  </div>
+
+  <!-- Memory Section -->
+  <div id="memory" class="hidden">
+    <h2>Our Journey Together</h2>
+    <div class="gallery">
+      <div class="memory-item">
+        <img src="collegep.webp" alt="Memory 1">
+        <p>Your smile lights up any room. I don’t think you realize how many people it brightens.</p>
+      </div>
+      <div class="memory-item">
+        <img src="collegep1.webp" alt="Memory 2">
+        <p>I've seen how kind you are to others, even when nobody’s watching. It’s inspiring.</p>
+      </div>
+    </div>
+    <button onclick="goToProposal()">Next</button>
+  </div>
+
+  <!-- Proposal Section -->
+  <div id="proposal" class="hidden">
+    <h2>Will You Be Mine Forever? 💖</h2>
+    <p>Words cannot express how much you mean to me.</p>
+    <p>So, I have just one question:</p>
+    <h3>Will you be my partner?</h3>
+    <div>
+      <button onclick="acceptProposal()">Yes!</button>
+      <button onclick="acceptProposal()">Absolutely!</button>
+    </div>
+  </div>
+
+  <!-- Celebration Section -->
+  <div id="celebration" class="hidden">
+    <h2>You’ve made me the happiest person in the world!</h2>
+    <canvas id="confetti"></canvas>
+    <img src="thankyou.jpg" alt="smiley">
+    <div class="big-smiley"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
